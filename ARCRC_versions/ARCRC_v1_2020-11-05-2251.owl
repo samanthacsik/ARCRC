@@ -1,0 +1,533 @@
+@prefix : <http://www.semanticweb.org/samanthacsik/ontologies/2020/10/untitled-ontology-48#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/samanthacsik/ontologies/2020/10/untitled-ontology-48> .
+
+<http://www.semanticweb.org/samanthacsik/ontologies/2020/10/untitled-ontology-48> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                             <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:46:54Z"^^xsd:dateTime ;
+                                             rdfs:label "definition"@en .
+
+
+###  http://purl.obolibrary.org/odo/IAO_0000119
+<http://purl.obolibrary.org/odo/IAO_0000119> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                             <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:47:37Z"^^xsd:dateTime ;
+                                             rdfs:label "definition source"@en .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000011
+<http://purl.dataone.org/odo/ARC_00000000000000000011> rdf:type owl:ObjectProperty ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T22:51:54Z"^^xsd:dateTime ;
+                                                       rdfs:comment "might want to delete before we import ECSO so that there are no conflict issues (usesProtocol already exists in ECSO)" ;
+                                                       rdfs:label "usesProtocol"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000012
+<http://purl.dataone.org/odo/ARC_00000000000000000012> rdf:type owl:ObjectProperty ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T22:53:03Z"^^xsd:dateTime ;
+                                                       rdfs:comment """adding this object property, but can delete later if not appropriate later
+
+e.g. of usage for NSIDC sea ice index (a target variable) that is calculated using both ice extent and ice concentration data:
+
+axiom = calculatedUsing only (Sea Ice Extent and Sea Ice Concentration)""" ;
+                                                       rdfs:label "calculatedUsing"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000046
+<http://purl.dataone.org/odo/ARCRC_00000000000000000046> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:08:13Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Surface Air Temperature.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature  NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment "**This is an existing ECSO annotation (ECSO:00003057) and IS defined (so I haven't added it here)**" ;
+                                                         rdfs:label "near-surface air temperature"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000047
+<http://purl.dataone.org/odo/ARCRC_00000000000000000047> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:08:29Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Sea Surface Temperature.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/840/Sea-Surface-Temperature NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment "**This is an existing ECSO annotation (ECSO:00001523) and IS defined (so I haven't added it here)**" ;
+                                                         rdfs:label "sea surface temperature"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000048
+<http://purl.dataone.org/odo/ARCRC_00000000000000000048> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:10:23Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Arctic Ocean Primary Productivity.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/839/Arctic-Ocean-Primary-Productivity-The-Response-of-Marine-Algae-to-Climate-Warming-and-Sea-Ice-Decline NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment "**This is an existing ECSO annotation (ECSO:00000516) and IS defined (so I haven't added it here)**" ;
+                                                         rdfs:label "chlorophyll-a concentration"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000049
+<http://purl.dataone.org/odo/ARCRC_00000000000000000049> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "How much area is covered in snow." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/843/Terrestrial-Snow-Cover" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:10:34Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Sea Ice.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment """Add the following as skos:altLabel when ready:
+-SCE""" ;
+                                                         rdfs:label "snow cover extent"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000050
+<http://purl.dataone.org/odo/ARCRC_00000000000000000050> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "How long snow continuously remains on land surfaces." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/843/Terrestrial-Snow-Cover" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:10:49Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Terrestrial Snow Cover.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/843/Terrestrial-Snow-Cover NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment """Add the following as skos:altLabel when ready:
+-SCD
+
+Add the following as database_cross_reference when ready: 
+- http://sweetontology.net/propTime/SnowCoverDuration""" ;
+                                                         rdfs:label "snow cover duration"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000051
+<http://purl.dataone.org/odo/ARCRC_00000000000000000051> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:10:59Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Terrestrial Snow Cover.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/843/Terrestrial-Snow-Cover NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment "**This is an existing ECSO annotation (ECSO:00001205) and IS defined (so I haven't added it here)**" ;
+                                                         rdfs:label "snow depth"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000052
+<http://purl.dataone.org/odo/ARCRC_00000000000000000052> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Provides a monthly snapshot of Arctic-wide changes in sea ice using consistently processed ice extent and concentration images and data values, since 1979." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "https://nsidc.org/data/seaice_index" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:11:16Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Sea Surface Temperature.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/840/Sea-Surface-Temperature (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment """add the following as skos:altLabels when we're ready:
+-National Snow & Ice Data Center Snow Index
+-Sea Ice Index (NSIDC)
+-Sea Ice Index""" ;
+                                                         rdfs:label "NSIDC Sea Ice Index"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000053
+<http://purl.dataone.org/odo/ARCRC_00000000000000000053> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "The area of sea ice relative to the total area ata  given point in the ocean." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "inferred from https://nsidc.org/data/seaice_index" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:11:30Z"^^xsd:dateTime ;
+                                                         rdfs:comment "This Target Variable is used to inform Vital Sign 'Sea Ice.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:label "sea ice concentration"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000054
+<http://purl.dataone.org/odo/ARCRC_00000000000000000054> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Defines a region as \"ice-covered' or \"not ice-covered\" based on a thresholdof 15 percent ice concentration per data cell." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "https://nsidc.org/arcticseaicenews/faq/#area_extent" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:11:42Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Sea Ice.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment "**This is an existing ECSO annotation (ECSO:00002654, though it falls under '00 Unclassified Measurement Type', which is a foster parent class) but is not defined**" ;
+                                                         rdfs:label "sea ice extent"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000055
+<http://purl.dataone.org/odo/ARCRC_00000000000000000055> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:12:03Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Sea Ice.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment "NOTE: 'sea ice volume, sea ice thickness' is a single Target Variable. I've broken them up into two separate terms because I think it makes more sense from a semantics perspective, but need input here" ;
+                                                         rdfs:label "sea ice volume"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000056
+<http://purl.dataone.org/odo/ARCRC_00000000000000000056> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:12:13Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Sea Ice.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment """**This is an existing ECSO annotation (ECSO:00002086) but is not defined**
+
+ALSO NOTE: 'sea ice volume, sea ice thickness' is a single Target Variable. I've broken them up into two separate terms because I think it makes more sense from a semantics perspective, but need input here""" ;
+                                                         rdfs:label "sea ice thickness"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000057
+<http://purl.dataone.org/odo/ARCRC_00000000000000000057> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "The duration of time a particular area of sea ice has persisted in its solid state." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:12:34Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> """Age of sea ice is calculated using data from the National Snow & Ice Data Center (NSIDC).
+
+This Target Variable is used to inform Vital Sign 'Sea Ice.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice  (NOTE: will want to replace this with the 2020 report when available)""" ;
+                                                         rdfs:label "age of sea ice"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000058
+<http://purl.dataone.org/odo/ARCRC_00000000000000000058> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "The rate of ice sheet mass loss that occurs where marine-terminating glaciers meet the ocean." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:13:10Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> """Solid ice discharge is derived from ice velocity.
+
+This Target Variable is used to inform Vital Sign 'Greenland Ice Sheet.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet (NOTE: will want to replace this with the 2020 report when available)""" ;
+                                                         rdfs:label "solid ice discharge"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000059
+<http://purl.dataone.org/odo/ARCRC_00000000000000000059> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "The fraction of incident sunlight reflected by a surface." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:13:19Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign, 'Greenland Ice Sheet.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:label "surface albedo"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000060
+<http://purl.dataone.org/odo/ARCRC_00000000000000000060> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:13:32Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> """For land weather stations north of 60° N, air temperature anomalies are relative to the 1981-2010 mean (inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature).
+
+This Target Variable is used to inform Vital Sign 'Surface Air Temperature.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature (NOTE: will want to replace this with the 2020 report when available)""" ;
+                                                         rdfs:label "Arctic land air temperature anomaly"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000061
+<http://purl.dataone.org/odo/ARCRC_00000000000000000061> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:13:49Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> """For global land weather stations, air temperature anomalies are relative to the 1981-2010 mean (inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature).
+
+This Target Variable is used to inform Vital Sign 'Surface Air Temperature.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature (NOTE: will want to replace this with the 2020 report when available)""" ;
+                                                         rdfs:label "global land air temperature anomaly"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000062
+<http://purl.dataone.org/odo/ARCRC_00000000000000000062> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:14:06Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> """Anomalies are relative to the 1981-2010 mean (inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature).
+
+This Target Variable is used to inform Vital Sign 'Surface Air Temperature.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature (NOTE: will want to replace this with the 2020 report when available)""" ;
+                                                         rdfs:label "seasonal/annual anomaly patterns for air temperatures"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000063
+<http://purl.dataone.org/odo/ARCRC_00000000000000000063> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Quasi-liquid film that can occur on the surface of a solid even below melting point; the thickness of the film is temperature dependent." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "https://en.wikipedia.org/wiki/Premelting#:~:text=From%20Wikipedia%2C%20the%20free%20encyclopedia,common%20for%20all%20crystalline%20materials" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:14:24Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Greenland Ice Sheet.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:label "surface melt"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000064
+<http://purl.dataone.org/odo/ARCRC_00000000000000000064> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "The net balance between mass gain vs. mass loss." ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:14:38Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Greenland Ice Sheet.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:label "total mass balance"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000065
+<http://purl.dataone.org/odo/ARCRC_00000000000000000065> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Net balance between ice gained (via accumulation) vs. ice loss (via ablation) at the surface." ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:14:51Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Greenland Ice Sheet.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment """**This is an existing ECSO annotation (ECSO:00002641) but is not defined**
+
+Add the following as skos:altLabel when ready:
+-Equilibrium Line Altitude""" ;
+                                                         rdfs:label "surface mass balance"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000066
+<http://purl.dataone.org/odo/ARCRC_00000000000000000066> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Loss in ice mass due to melting, sublimation, evaporation, ice calving, aeolian processes like blowing snow, avalanche, and any other ablation." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "https://en.wikipedia.org/wiki/Ablation_zone#:~:text=Ablation%20zone%20or%20ablation%20area,avalanche%2C%20and%20any%20other%20ablation" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:15:01Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable was used to inform the Vital Sign, 'Greenland Ice Sheet.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:label "ice ablation"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000067
+<http://purl.dataone.org/odo/ARCRC_00000000000000000067> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "The annual change in area of a marine-terminating glacier as a result of solid ice discharge." ;
+                                                         <http://purl.obolibrary.org/odo/IAO_0000119> "inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:15:16Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign, 'Greenland Ice Sheet.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:label "marine terminating glacier front annual area change"@en .
+
+
+###  http://purl.dataone.org/odo/ARCRC_00000000000000000068
+<http://purl.dataone.org/odo/ARCRC_00000000000000000068> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "TBD" ;
+                                                         <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2020-11-06T00:49:30Z"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Surface Air Temperature.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature NOTE: will want to replace this with the 2020 report when available)" ;
+                                                         rdfs:comment "NOTE: 'geopotential height and wind' is a single Target Variable. I've broken them up into two separate terms ('geopotential height' and 'atmospheric wind circulation') because I think it makes more sense from a semantics perspective, but need input here" ;
+                                                         rdfs:label "atmospheric wind circulation"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000000
+<http://purl.dataone.org/odo/ARC_00000000000000000000> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000013> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Vital Signs are indicators of the state of the Arctic environmental system. They are assessed using measurements of and/or proxies for target variables." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "inferred from https://arctic.noaa.gov/Report-Card" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:24:38Z"^^xsd:dateTime ;
+                                                       <http://purl.org/dc/elements/1.1/description> """Issued annually since 2006, the Arctic Report Card (ARC) is a timely and peer-reviewed source for clear, reliable and concise environmental information on the current state of different components of the Arctic environmental system relative to historical records. The Report Card is intended for a wide audience, including scientists, teachers, students, decision-makers and the general public interested in the Arctic environment and science.
+
+Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card""" ;
+                                                       rdfs:label "2020 Arctic Vital Sign"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000001
+<http://purl.dataone.org/odo/ARC_00000000000000000001> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Snow covering the Arctic land surface, which is characterized by three variables: snow cover extent (how much area is covered by snow), snow cover duration (how long snow continuously remains on the land surface), and snow water equivalent (how much water is stored in solid form by the snowpack; a function of snow depth and density)." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "adapted from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/843/Terrestrial-Snow-Cover" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:42:36Z"^^xsd:dateTime ;
+                                                       rdfs:comment "At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Terrestrial Snow Cover Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/843/Terrestrial-Snow-Cover" ;
+                                                       rdfs:label "Terrestrial Snow Cover"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000002
+<http://purl.dataone.org/odo/ARC_00000000000000000002> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "The quantity of aboveground vegetation in the Arctic tundra." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/838/Tundra-Greenness" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:42:42Z"^^xsd:dateTime ;
+                                                       <http://purl.org/dc/elements/1.1/description> "Normalized Difference Vegetation Index, NDVI (http://www.purl.dataone.org/odo/ECSO_00010076) is highly correlated with Tundra Greenness." ;
+                                                       rdfs:comment "At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Tundra Greenness Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/838/Tundra-Greenness" ;
+                                                       rdfs:label "Tundra Greenness"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000003
+<http://purl.dataone.org/odo/ARC_00000000000000000003> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "TBD...An air temperature measured ___where exactly?___" ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "TBD" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:42:51Z"^^xsd:dateTime ;
+                                                       rdfs:comment """NOTE: need input to clarify definition -- What does \"surface\" mean (ice surface, land surface, etc.)? At which height above the surface? Plus any other details necessary for defining 'surface air temperature.'
+
+At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Surface Air Temperature Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature""" ;
+                                                       rdfs:label "Surface Air Temperature"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000004
+<http://purl.dataone.org/odo/ARC_00000000000000000004> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A vast body of ice covering 1.71 million km2, roughly 80% of the surface of Greenland." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "http://purl.obolibrary.org/obo/GAZ_00011748" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:43:05Z"^^xsd:dateTime ;
+                                                       rdfs:comment """Add the following as owl:sameAs when ready:
+-http://purl.obolibrary.org/obo/GAZ_00011748""" ,
+                                                                    "At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Greenland Ice Sheet Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet" ;
+                                                       rdfs:label "Greenland Ice Sheet"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000005
+<http://purl.dataone.org/odo/ARC_00000000000000000005> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "The process of carbon fixation in the Arctic Ocean, primarily by autotrophic single-celled algae living in sea ice (ice algae) and water column (phytoplankton)." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "adapted from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/839/Arctic-Ocean-Primary-Productivity-The-Response-of-Marine-Algae-to-Climate-Warming-and-Sea-Ice-Decline" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:43:13Z"^^xsd:dateTime ;
+                                                       rdfs:comment """Add the following as skos:altLabel when ready:
+-Arctic Ocean Primary Productivity Carbon Flux""" ,
+                                                                    "At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Arctic Ocean Primary Productivity Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/839/Arctic-Ocean-Primary-Productivity-The-Response-of-Marine-Algae-to-Climate-Warming-and-Sea-Ice-Decline" ;
+                                                       rdfs:label "Arctic Ocean Primary Productivity"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000006
+<http://purl.dataone.org/odo/ARC_00000000000000000006> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A water temperature which inheres in water close to the surface of an ocean or sea. The exact meaning of surface varies according to the measurement method used, but it is between 1 millimetre (0.04 in) and 20 metres (70 ft) below the sea surface." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "http://purl.obolibrary.org/obo/ENVO_04000002" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:43:19Z"^^xsd:dateTime ;
+                                                       rdfs:comment "At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Sea Surface Temperature Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/840/Sea-Surface-Temperature" ,
+                                                                    """add the following as owl:sameAs when ready:
+-http://purl.dataone.org/odo/ECSO_00001523
+
+add the following as skos:altLabel when ready:
+-temperature of sea surface
+-ocean surface temperature
+-temperature of the ocean surface""" ;
+                                                       rdfs:label "Sea Surface Temperature"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000007
+<http://purl.dataone.org/odo/ARC_00000000000000000007> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Water ice which has formed by the freezing of sea water." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "http://purl.obolibrary.org/obo/ENVO_00002200" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-04T19:43:23Z"^^xsd:dateTime ;
+                                                       rdfs:comment "At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Sea Ice Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice" ,
+                                                                    """add the following as owl:sameAs when ready:
+-http://purl.obolibrary.org/obo/ENVO_00002200""" ;
+                                                       rdfs:label "Sea Ice"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000013
+<http://purl.dataone.org/odo/ARC_00000000000000000013> rdf:type owl:Class ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Vital Signs are indicators of the state of the Arctic environmental system. They are assessed using measurements of and/or proxies for target variables." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "inferred from https://arctic.noaa.gov/Report-Card" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-05T00:43:25Z"^^xsd:dateTime ;
+                                                       <http://purl.org/dc/elements/1.1/description> """Issued annually since 2006, the Arctic Report Card (ARC) is a timely and peer-reviewed source for clear, reliable and concise environmental information on the current state of different components of the Arctic environmental system relative to historical records. The Report Card is intended for a wide audience, including scientists, teachers, students, decision-makers and the general public interested in the Arctic environment and science.
+
+Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card""" ;
+                                                       rdfs:label "Arctic Vital Signs"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000040
+<http://purl.dataone.org/odo/ARC_00000000000000000040> rdf:type owl:Class ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Measurements and/or proxies for assessing Arctic Vital Signs." ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:04:20Z"^^xsd:dateTime ;
+                                                       rdfs:label "Arctic Target Variables"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000041
+<http://purl.dataone.org/odo/ARC_00000000000000000041> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000040> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Measurements and/or proxies for assessing Arctic Vital Signs." ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:04:37Z"^^xsd:dateTime ;
+                                                       rdfs:label "2020 Arctic Target Variables"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000042
+<http://purl.dataone.org/odo/ARC_00000000000000000042> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:06:29Z"^^xsd:dateTime ;
+                                                       rdfs:comment "**This is an existing ECSO annotation (ECSO:00010076) and IS defined (so I haven't added it here)**" ;
+                                                       rdfs:label "Normalized Difference Vegetation Index (NDVI)"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000043
+<http://purl.dataone.org/odo/ARC_00000000000000000043> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "The height of a given point in the atmosphere in units proportional to the potential energy of unit mass (geopotential) at this height relative to sea level." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "https://glossary.ametsoc.org/wiki/Geopotential_height" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:06:48Z"^^xsd:dateTime ;
+                                                       <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Surface Air Temperature.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature NOTE: will want to replace this with the 2020 report when available)" ;
+                                                       rdfs:comment """NOTE: 'geopotential height and wind' is a single Target Variable. I've broken them up into two separate terms ('geopotential height' and 'atmospheric wind circulation') because I think it makes more sense from a semantics perspective, but need input here
+
+Add the following as skos:altLabel when ready:
+-geopotential altitude
+
+Add the following as database_cross_reference when ready: 
+- http://sweetontology.net/propSpaceHeight/GeopotentialHeight""" ;
+                                                       rdfs:label "geopotential height"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000044
+<http://purl.dataone.org/odo/ARC_00000000000000000044> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "The sum of mean monthly Land Surface Temperatures (LST) for months with mean temperatures above freezing (>0°C)." ;
+                                                       <http://purl.obolibrary.org/odo/IAO_0000119> "https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/838/Tundra-Greenness" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:07:00Z"^^xsd:dateTime ;
+                                                       <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Tundra Greenness.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/838/Tundra-Greenness (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                       rdfs:comment """Add the following as skos:altLabel when ready:
+-SWI""" ;
+                                                       rdfs:label "Summer Warmth Index (SWI)"@en .
+
+
+###  http://purl.dataone.org/odo/ARC_00000000000000000045
+<http://purl.dataone.org/odo/ARC_00000000000000000045> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "TBD -- need to know more specifics to define (e.g. how this is different than 'near surface air temperature')" ;
+                                                       <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:07:17Z"^^xsd:dateTime ;
+                                                       <http://purl.org/dc/elements/1.1/description> "This Target Variable is used to inform Vital Sign 'Surface Air Temperature.' See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature (NOTE: will want to replace this with the 2020 report when available)" ;
+                                                       rdfs:label "surface air temperature"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
