@@ -177,7 +177,7 @@ Add the following as database_cross_reference when ready:
 ###  http://purl.dataone.org/odo/ARCRC_00000000000000000054
 <http://purl.dataone.org/odo/ARCRC_00000000000000000054> rdf:type owl:Class ;
                                                          rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000041> ;
-                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Defines a region as \"ice-covered' or \"not ice-covered\" based on a thresholdof 15 percent ice concentration per data cell." ;
+                                                         <http://purl.obolibrary.org/obo/IAO_0000115> "Defines a region as \"ice-covered' or \"not ice-covered\" based on a threshold of 15 percent ice concentration per data cell." ;
                                                          <http://purl.obolibrary.org/odo/IAO_0000119> "https://nsidc.org/arcticseaicenews/faq/#area_extent" ;
                                                          <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
                                                          <http://purl.org/dc/elements/1.1/date> "2020-11-05T23:11:42Z"^^xsd:dateTime ;

@@ -110,7 +110,7 @@
     <owl:ObjectProperty rdf:about="http://purl.dataone.org/odo/ARC_00000012">
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T22:53:03Z</dc:date>
-        <rdfs:comment>adding this object property, but can delete later if not appropriate later
+        <rdfs:comment>adding this object property, but can delete later if not appropriate
 
 e.g. of usage for NSIDC sea ice index (a target variable) that is calculated using both ice extent and ice concentration data:
 
@@ -128,6 +128,28 @@ axiom = calculatedUsing only (Sea Ice Extent and Sea Ice Concentration)</rdfs:co
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.dataone.org/odo/ARCRC_00000001 -->
+
+    <owl:Class rdf:about="http://purl.dataone.org/odo/ARCRC_00000001">
+        <obo:IAO_0000115>Datasets pertaining to specific Target Variables, which are used to inform Arctic Vital Sign assessments.</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-06T17:18:02Z</dc:date>
+        <rdfs:label xml:lang="en">Datasets</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.dataone.org/odo/ARCRC_00000002 -->
+
+    <owl:Class rdf:about="http://purl.dataone.org/odo/ARCRC_00000002">
+        <rdfs:subClassOf rdf:resource="http://purl.dataone.org/odo/ARCRC_00000001"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-06T17:20:00Z</dc:date>
+        <rdfs:label xml:lang="en">Datasets 2020</rdfs:label>
+    </owl:Class>
     
 
 
@@ -178,6 +200,8 @@ axiom = calculatedUsing only (Sea Ice Extent and Sea Ice Concentration)</rdfs:co
 
     <owl:Class rdf:about="http://purl.dataone.org/odo/ARCRC_00000049">
         <rdfs:subClassOf rdf:resource="http://purl.dataone.org/odo/ARCRC_00000502"/>
+        <obo:IAO_0000115>How much area is covered in snow.</obo:IAO_0000115>
+        <odo:IAO_0000119>https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/843/Terrestrial-Snow-Cover</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-05T23:10:34Z</dc:date>
         <dc:description>This Target Variable is used to inform Vital Sign &apos;Sea Ice.&apos; See the 2019 Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice NOTE: will want to replace this with the 2020 report when available)</dc:description>
@@ -245,7 +269,7 @@ Add the following as database_cross_reference when ready:
 
     <owl:Class rdf:about="http://purl.dataone.org/odo/ARCRC_00000053">
         <rdfs:subClassOf rdf:resource="http://purl.dataone.org/odo/ARCRC_00000501"/>
-        <obo:IAO_0000115>The area of sea ice relative to the total area ata  given point in the ocean.</obo:IAO_0000115>
+        <obo:IAO_0000115>The area of sea ice relative to the total area at a given point in the ocean.</obo:IAO_0000115>
         <odo:IAO_0000119>inferred from https://nsidc.org/data/seaice_index</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-05T23:11:30Z</dc:date>
@@ -259,7 +283,7 @@ Add the following as database_cross_reference when ready:
 
     <owl:Class rdf:about="http://purl.dataone.org/odo/ARCRC_00000054">
         <rdfs:subClassOf rdf:resource="http://purl.dataone.org/odo/ARCRC_00000501"/>
-        <obo:IAO_0000115>Defines a region as &quot;ice-covered&apos; or &quot;not ice-covered&quot; based on a thresholdof 15 percent ice concentration per data cell.</obo:IAO_0000115>
+        <obo:IAO_0000115>Defines a region as &quot;ice-covered&apos; or &quot;not ice-covered&quot; based on a threshold of 15 percent ice concentration per data cell.</obo:IAO_0000115>
         <odo:IAO_0000119>https://nsidc.org/arcticseaicenews/faq/#area_extent</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-05T23:11:42Z</dc:date>
@@ -440,7 +464,7 @@ Add the following as skos:altLabel when ready:
 
     <owl:Class rdf:about="http://purl.dataone.org/odo/ARCRC_00000066">
         <rdfs:subClassOf rdf:resource="http://purl.dataone.org/odo/ARC_00000040"/>
-        <obo:IAO_0000115>Loss in ice mass due to melting, sublimation, evaporization, ice calving, aeolian processes like blowing snow, avalanche, and any other ablation.</obo:IAO_0000115>
+        <obo:IAO_0000115>Loss in ice mass due to melting, sublimation, evaporation, ice calving, aeolian processes like blowing snow, avalanche, and any other ablation.</obo:IAO_0000115>
         <odo:IAO_0000119>https://en.wikipedia.org/wiki/Ablation_zone#:~:text=Ablation%20zone%20or%20ablation%20area,avalanche%2C%20and%20any%20other%20ablation</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-05T23:15:01Z</dc:date>
@@ -578,7 +602,6 @@ The main website for the Arctic Report Card as of Nov 1, 2020 is: https://arctic
         <odo:IAO_0000119>adapted from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/843/Terrestrial-Snow-Cover</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T19:42:36Z</dc:date>
-        <dc:description>Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card</dc:description>
         <rdfs:comment>At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Terrestrial Snow Cover Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/843/Terrestrial-Snow-Cover</rdfs:comment>
         <rdfs:label xml:lang="en">Terrestrial Snow Cover</rdfs:label>
     </owl:Class>
@@ -593,9 +616,7 @@ The main website for the Arctic Report Card as of Nov 1, 2020 is: https://arctic
         <odo:IAO_0000119>inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/838/Tundra-Greenness</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T19:42:42Z</dc:date>
-        <dc:description>Normalized Difference Vegetation Index, NDVI (http://www.purl.dataone.org/odo/ECSO_00010076) is highly correlated with Tundra Greeness.
-
-Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card</dc:description>
+        <dc:description>Normalized Difference Vegetation Index, NDVI (http://www.purl.dataone.org/odo/ECSO_00010076) is highly correlated with Tundra Greeness.</dc:description>
         <rdfs:comment>At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Tundra Greenness Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/838/Tundra-Greenness</rdfs:comment>
         <rdfs:label xml:lang="en">Tundra Greenness</rdfs:label>
     </owl:Class>
@@ -610,7 +631,6 @@ Find current and past assessments of the Arctic Report Card Vital Signs by visit
         <odo:IAO_0000119>TBD</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T19:42:51Z</dc:date>
-        <dc:description>Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card</dc:description>
         <rdfs:comment>NOTE: need input to clarify definition -- What does &quot;surface&quot; mean (ice surface, land surface, etc.)? At which height above the surface? Plus any other details necessary for defining &apos;surface air temperature.&apos;
 
 At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Surface Air Temperature Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/835/Surface-Air-Temperature</rdfs:comment>
@@ -623,15 +643,6 @@ At the time of ontology construction, the 2019 Arctic Essays were referenced for
 
     <owl:Class rdf:about="http://purl.dataone.org/odo/ARC_00000004">
         <rdfs:subClassOf rdf:resource="http://purl.dataone.org/odo/ARC_00000013"/>
-        <obo:IAO_0000115>A vast body of ice covering 1.71 million km2, roughly 80% of the surface of Greenland.</obo:IAO_0000115>
-        <odo:IAO_0000119>http://purl.obolibrary.org/obo/GAZ_00011748</odo:IAO_0000119>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T19:43:05Z</dc:date>
-        <dc:description>Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card</dc:description>
-        <rdfs:comment>At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Greenland Ice Sheet Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet</rdfs:comment>
-        <rdfs:label xml:lang="en">Greenland Ice Sheet</rdfs:label>
-        <owl:sameAs rdf:resource="http://purl.dataone.org/odo/ARCRC_00000508"/>
-        <owl:sameAs>http://purl.obolibrary.org/obo/GAZ_00011748</owl:sameAs>
     </owl:Class>
     
 
@@ -641,10 +652,9 @@ At the time of ontology construction, the 2019 Arctic Essays were referenced for
     <owl:Class rdf:about="http://purl.dataone.org/odo/ARC_00000005">
         <rdfs:subClassOf rdf:resource="http://purl.dataone.org/odo/ARC_00000013"/>
         <obo:IAO_0000115>The process of carbon fixation in the Arctic Ocean, primarily by autotrophic single-celled algae living in sea ice (ice algae) and water column (phytoplankton).</obo:IAO_0000115>
-        <odo:IAO_0000119>inferred from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/839/Arctic-Ocean-Primary-Productivity-The-Response-of-Marine-Algae-to-Climate-Warming-and-Sea-Ice-Decline</odo:IAO_0000119>
+        <odo:IAO_0000119>adapted from https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/839/Arctic-Ocean-Primary-Productivity-The-Response-of-Marine-Algae-to-Climate-Warming-and-Sea-Ice-Decline</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T19:43:13Z</dc:date>
-        <dc:description>Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card</dc:description>
         <rdfs:comment>At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Arctic Ocean Primary Productivity Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/839/Arctic-Ocean-Primary-Productivity-The-Response-of-Marine-Algae-to-Climate-Warming-and-Sea-Ice-Decline</rdfs:comment>
         <rdfs:label xml:lang="en">Arctic Ocean Primary Productivity</rdfs:label>
         <skos:altLabel>Arctic Ocean Primary Productivity Carbon Flux</skos:altLabel>
@@ -660,7 +670,6 @@ At the time of ontology construction, the 2019 Arctic Essays were referenced for
         <odo:IAO_0000119>http://purl.obolibrary.org/obo/ENVO_04000002</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T19:43:19Z</dc:date>
-        <dc:description>Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card</dc:description>
         <rdfs:comment>At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Sea Surface Temperature Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/840/Sea-Surface-Temperature</rdfs:comment>
         <rdfs:label xml:lang="en">Sea Surface Temperature</rdfs:label>
         <owl:sameAs>http://purl.dataone.org/odo/ECSO_00001523</owl:sameAs>
@@ -679,7 +688,6 @@ temperature of the ocean surface</skos:altLabel>
         <odo:IAO_0000119>http://purl.obolibrary.org/obo/ENVO_00002200</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T19:43:23Z</dc:date>
-        <dc:description>Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card</dc:description>
         <rdfs:comment>At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Sea Ice Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/841/Sea-Ice</rdfs:comment>
         <rdfs:label xml:lang="en">Sea Ice</rdfs:label>
         <owl:sameAs>http://purl.obolibrary.org/obo/ENVO_00002200</owl:sameAs>
@@ -694,7 +702,9 @@ temperature of the ocean surface</skos:altLabel>
         <odo:IAO_0000119>inferred from https://arctic.noaa.gov/Report-Card</odo:IAO_0000119>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-05T00:43:25Z</dc:date>
-        <dc:description>Issued annually since 2006, the Arctic Report Card is a timely and peer-reviewed source for clear, reliable and concise environmental information on the current state of different components of the Arctic environmental system relative to historical records. The Report Card is intended for a wide audience, including scientists, teachers, students, decision-makers and the general public interested in the Arctic environment and science.</dc:description>
+        <dc:description>Issued annually since 2006, the Arctic Report Card is a timely and peer-reviewed source for clear, reliable and concise environmental information on the current state of different components of the Arctic environmental system relative to historical records. The Report Card is intended for a wide audience, including scientists, teachers, students, decision-makers and the general public interested in the Arctic environment and science.
+
+Find current and past assessments of the Arctic Report Card Vital Signs by visiting: https://arctic.noaa.gov/Report-Card</dc:description>
         <rdfs:label xml:lang="en">Arctic Vital Signs</rdfs:label>
     </owl:Class>
     
@@ -814,11 +824,38 @@ Add the following as database_cross_reference when ready:
 
     <owl:NamedIndividual rdf:about="http://purl.dataone.org/odo/ARCRC_00000508">
         <rdf:type rdf:resource="http://purl.dataone.org/odo/ARCRC_00000505"/>
+        <owl:sameAs rdf:resource="http://purl.dataone.org/odo/ARC_00000004"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0003-0632-7576"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-06T16:16:13Z</dc:date>
         <rdfs:label xml:lang="en">Greenland Ice Sheet</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/GAZ_00011748"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.dataone.org/odo/ARC_00000004 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.dataone.org/odo/ARC_00000004"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.dataone.org/odo/ARC_00000004">
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-5300-3075"/>
+        <rdfs:label xml:lang="en">Greenland Ice Sheet</rdfs:label>
+        <owl:sameAs>http://purl.obolibrary.org/obo/GAZ_00011748</owl:sameAs>
+        <rdfs:comment>At the time of ontology construction, the 2019 Arctic Essays were referenced for term definitions and relevant information. Find the 2019 Greenland Ice Sheet Essay here: https://arctic.noaa.gov/Report-Card/Report-Card-2019/ArtMID/7916/ArticleID/842/Greenland-Ice-Sheet</rdfs:comment>
+        <odo:IAO_0000119>http://purl.obolibrary.org/obo/GAZ_00011748</odo:IAO_0000119>
+        <obo:IAO_0000115>A vast body of ice covering 1.71 million km2, roughly 80% of the surface of Greenland.</obo:IAO_0000115>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-04T19:43:05Z</dc:date>
+    </rdf:Description>
 </rdf:RDF>
 
 
