@@ -345,20 +345,6 @@ Add the following as skos:altLabel when ready:
                                                          rdfs:label "atmospheric wind circulation"@en .
 
 
-###  http://purl.dataone.org/odo/ARCRC_00000069
-<http://purl.dataone.org/odo/ARCRC_00000069> rdf:type owl:Class ;
-                                             <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
-                                             <http://purl.org/dc/elements/1.1/date> "2020-11-06T15:55:00Z"^^xsd:dateTime ;
-                                             rdfs:label "THIS IS A TEST"@en .
-
-
-###  http://purl.dataone.org/odo/ARCRC_00000070
-<http://purl.dataone.org/odo/ARCRC_00000070> rdf:type owl:Class ;
-                                             <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-5300-3075> ;
-                                             <http://purl.org/dc/elements/1.1/date> "2020-11-06T15:57:20Z"^^xsd:dateTime ;
-                                             rdfs:label "THIS IS A SECOND TEST"@en .
-
-
 ###  http://purl.dataone.org/odo/ARC_00000000000000000000
 <http://purl.dataone.org/odo/ARC_00000000000000000000> rdf:type owl:Class ;
                                                        rdfs:subClassOf <http://purl.dataone.org/odo/ARC_00000000000000000013> ;
